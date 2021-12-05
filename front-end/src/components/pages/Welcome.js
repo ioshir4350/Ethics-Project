@@ -19,7 +19,7 @@ const Welcome = () => {
                 <Container>
                     <Row>
                         <Col style={{paddingTop: '10px'}}>
-                            <input style={{width: '250px', height: '50px', paddingLeft:'10px'}} autoFocus placeholder="Enter your name"/>
+                            <input style={{width: '250px', height: '50px', paddingLeft:'10px'}} autoFocus placeholder="Please enter your name"/>
                         </Col>
                         
                     </Row>

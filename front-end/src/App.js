@@ -1,6 +1,7 @@
 import {BrowserRouter as Router,
 Switch, Route} from 'react-router-dom'
 import Welcome from './components/pages/Welcome'
+import Decision from './components/shared/Decision';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
           </Route>
           <Route path="/bye" exact>
           <h1>bye </h1>
+          </Route>
+          <Route path="/page/:task" exact>
+            <Decision />
           </Route>
         </Switch>
       </Router>
