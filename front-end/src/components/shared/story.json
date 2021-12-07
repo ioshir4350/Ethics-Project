@@ -95,7 +95,7 @@
     },
 
     "b_sibling_1b" : {
-        "content" : "You decide to drive back home to at least drop your sibling off. Your car makes it home, though it is smoking a bit. Your sibling, still a little stunned, walks home and goes straight to bed.You get ready to go to the grocery store. You convince yourself that the damage is not that bad.",
+        "content" : "You decide to drive back home to at least drop your sibling off. Your car makes it home, though it is smoking a bit. Your sibling, still a little stunned, walks home and goes straight to bed. You get ready to go to the grocery store. You convince yourself that the damage is not that bad.",
         "decisions" : ["Continue"],
         "links" : ["b_grocery"]
     },
@@ -107,18 +107,19 @@
     },
     
     "tow_truck_ending" : {
-        "content" : "",
-        "decisions" : [],
+        "content" : "As you begin to fall asleep, you contemplate all the decisions you made today. Though you almost got into an accident, your choices in your now dented vehicle saved you and your sibling's life. The AI did its job and kept you safe. Maybe this was the best outcome that could have happened. However, you decide to not drive for the rest of the month and just take public transportation everywhere",
+        "decisions" : ["The End"],
         "links" : []
     },
 
     "b_sibling_2" : {
-        "content" : "",
-        "decisions" : [],
-        "links" : [] 
+        "content" : "You remember that you set the safety option on your car to keep every human in a 20m radius as safe as it could. Your car turns its trunk to the car and heads straight toward the speeding car! However, it hits the car ar a slight angle, which causes the speeding car to divert and run into a line of shrubs. There is a big dent on the back of your car but fortunately because Autarchic provided a 3 year warranty plan, you could get the car fixed for free if the damage was caused by the car AI. You drop your sibling back home after checking if the speeding driver is okay, and continue on your day like nothing ever happened ... except for the fact that your car now has a big dent on the back.",
+        "decisions" : ["Continue"],
+        "links" : ["b_grocery"] 
     },    
     
-    "b_grocery": {"content": "You need to go grocery shopping at 4pm. The place you usually park near the grocery market is on road construction. So, you have to find another place to park as soon as possible otherwise you will get back home late and have no time to cook for your younger sibling because you are planning to go to your friend’s party after dinner. You can pick two options that you do not have to be in the car while you are grocery shopping: 1. Letting the car find a parking spot by itself and park; 2. Letting the car drive around the grocery store while you are in the market.",
+    "b_grocery": {
+        "content": "You need to go grocery shopping at 4pm. The place you usually park near the grocery market is on road construction. So, you have to find another place to park as soon as possible otherwise you will get back home late and have no time to cook for your younger sibling because you are planning to go to your friend’s party after dinner. You can pick two options that you do not have to be in the car while you are grocery shopping: 1. Letting the car find a parking spot by itself and park; 2. Letting the car drive around the grocery store while you are in the market.",
         "decisions": {"grocery_decision_b1" : "Let your car look for a space to park by itself", "grocery_decision_b2" : "Let your car drive by itself while you are shopping"},
         "links": ["b_grocery_1", "b_grocery_2"]
     },
