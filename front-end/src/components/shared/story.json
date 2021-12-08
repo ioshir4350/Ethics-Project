@@ -4,7 +4,8 @@
         "decisions" : [
             "Drive Manually?", 
             "Allow car to drive?"], 
-        "links": ["a_school_self", "a_school_car"]},
+        "links": ["a_school_self", "a_school_car"]
+    },
     
     "a_school_self": {
         "content": "You arrive on time, but a speed camera catches you, and you are fined... You are now going to school. You forgot a required textbook at home, so you dash over there to pick it up. Now, you have to get to school from home. If you autodrive, you may arrive late and have to autopark.",
@@ -25,36 +26,41 @@
             "sibling_decision_a1" : "You are late because your arms are sore, you couldn’t go fast enough because controlling the wheel at high speeds with sore arms can be dangerous. You have to autopark.", 
             "sibling_decision_a2" : "If the car drives… you arrive on time, but you are 30 minutes late to the gym. You decide to cut your time at the gym, so timewise for the next task you are okay."
         },
-        "links": []},
+        "links": []
+    },
 
     "a_grocery": {
         "content": "You now have to go grocery shopping! With the auto-drive, you have to deal with the car being parked really far while manual driving requires double parking as well as being rushed.", 
         
-        "links": []},
+        "links": []
+    },
 
-    "a_party": {"content": "You get to your friend’s party where it takes about 20 minutes from your place and park safely. You take a couple of shots and smoke weed. Party is over at 1 am in the morning, and you are in the middle of Manhattan city. Time to go back home. You know you cannot drive for sure. Here, you can choose two options: 1. You know a shortcut that hasn’t been programmed into the car yet for autodrive. If you take this, you avoid the toll you have to pay and avoid the booth which contains police. 2. You let the car drive, which takes a bridge that has a toll. ", "links": []},
+    "a_party": {
+        "content": "You get to your friend’s party where it takes about 20 minutes from your place and park safely. You take a couple of shots and smoke weed. Party is over at 1 am in the morning, and you are in the middle of Manhattan city. Time to go back home. You know you cannot drive for sure. Here, you can choose two options: 1. You know a shortcut that hasn’t been programmed into the car yet for autodrive. If you take this, you avoid the toll you have to pay and avoid the booth which contains police. 2. You let the car drive, which takes a bridge that has a toll. ",
+        "links": []
+    },
 
 
     "b_gym": {
-        "content": "For your New Year's resolution, you promised yourself that you would spend an hour at the gym each day. So far, you have kept to your schedule, but now you are getting busier because of school and more obligations. Still, you are committed to your exercise regimen and want to try your best to go to the gym for and hour each day. The gym is several miles away, and you must drive to your location. You hop into your car and begin driving to the gym. Halfway to your destination while you are on the highway, you see that there is a traffic jam. There seems to be some space that you can squeeze your car through to get ahead of the traffic, but it will be a bit tricky and risky. Your car could potentially be damaged. When you check your GPS, you see that you will arrive at the gym at around 9:30am, half an hour late. You would barely get any exercise at that point and worst of all, you will miss leg day. Do you try to cut in front of the other vehicles or wait in traffic?", 
-        "decisions": ["Cut in front of the vehicles and risk vehicle damage", "Be safe and wait for the traffic but be 30 minutes late"],
+        "content": "For your New Year's resolution, you promised yourself that you would spend an hour at the gym each day. So far, you have kept to your rigorous schedule, but now you are getting busier because of school and other obligations. Still, you are committed to your exercise regimen and want to try your best to go to the gym for and hour each day. The gym you go to is 2 miles away, and you must drive to your location. You grab your stuff, hop into your car and begin driving to the gym. Halfway to your destination while you are on the highway, you get caught in a traffic jam. There seems to be some space that you can squeeze your car through to get ahead of the traffic, but it will be a bit tricky and risky. Your car could potentially be damaged. When you check your GPS, you see that you will arrive at the gym at around 9:30am, half an hour late. You would barely get any exercise at that point and worst of all, you will miss leg day. Do you try to cut in front of the other vehicles or wait in traffic?", 
+        "decisions": ["Cut in front of the vehicles", "Be safe and wait for the traffic"],
         "links": ["b_gym_1", "b_gym_2"]
     },
 
     "b_gym_1" : {
-        "content" : "You decide that since you have never missed leg and you do not want to miss leg ever, you take the risk and try to steer through the traffic. Autarchic has a 'super safety' mode where the vehicle will keep the driver safe no matter what while getting the driver closer to his/her destination. You enable this driving mode and accelerate your car. Your adrenaline rises as you zip past the trucks and cars on the highway at 60mph. Other drivers beep angrily at you as you come inches within the sides of their vehicles, but your car keeps you from ramming into the other cars. The AI's precision is impressive, really. You wonder how the company made such and amazing software. You make it through the traffic jam completely intact and with no damage to you",
+        "content" : "You decide that since you have never missed leg and you do not want to miss leg day ever, you take the risk and try to steer through the traffic. Autarchic has a 'super safety' mode where the vehicle will attempt to keep the driver safe no matter what while  still getting the driver closer to his/her destination. You enable this driving mode and accelerate your car. Your adrenaline rises as you zip past the trucks and cars on the highway at over 60mph. Other drivers beep angrily at you as you come within inches from the sides of their vehicles, but your car keeps you from ramming into the other cars. The AI's driving precision is impressive, really. You wonder how the company made such an amazing software. You make it through the traffic jam completely intact and with no damage to you or any other cars you passed by.",
         "decisions" : ["Continue"],
         "links" : ["b_school"]
     },
 
     "b_gym_2" : {
-        "content" : "You are a safe driver, and decide to not take the risk. The consequences of damaging your vehicle, another vehicle, or any passengers in an accident are far to great to justify the little time you save to exercise your legs. You can exercise another time.",
+        "content" : "You are a safe drivers and decide to not take the risk. The consequences of damaging your vehicle, another vehicle, or any passengers in an accident are far too great to justify the realtively little amount of time you save to exercise your legs. You can exercise another time.",
         "decisions" : ["Continue"],
         "links" : ["b_school"]
     },
     
     "b_school": {
-        "content": "After working out at the gym, you must go back to school for class. You are a university student and your class starts at 12pm. However, there is still a bit of traffic. You do know a shortcut through a mile-long grassy field nearby that can get past the most congested part of the road. This field is muddy and you have a small chance of getting stuck, meaning you will need to call the mechanic. You could also yourself if you crash into a rock or tree, as there is a heavily wooded section of the land. You have driven across this land a few times before and nothing bad has happened ... yet.", 
+        "content": "After working out at the gym, you must go back to school for class. You are a university student and your class starts at 12pm. However, there is still a bit of traffic. You do know a shortcut through a mile-long grassy field nearby that can get past the most congested part of the road. This field is muddy and you have a small chance of getting stuck, meaning you will need to call the mechanic. You could also yourself if you crash into a rock or tree, as there is a heavily wooded section of the land. You have driven across this land a few times before in your old car and nothing bad has happened ... yet.", 
         "decisions": ["Take shortcut to save time",  "Follow the law and stay on the road"],
         "links": ["b_school_1", "b_school_2"]},
     
@@ -77,13 +83,13 @@
     },
     
     "b_sibling": {
-        "content": "Your younger sibling goes to middle school across the city. You need to pick him up at 3pm and bring him back home. After the busy morning, you are fortunate to arrive at his school with no problems. You wait in the courtyard for your sibling and talk to them about their day. Afterwards, you walk them back to your car and head back home. As you are driving through a busy intersection, you see a car rush toward you at a frightening speed. There is a car both in front and behind you, and you are not sure how to get out of the situation. You remembered that when you bought your new Autarchic, you were made to configure some safety settings before being able to drive it. In your state of panic, you try to recall what safety setting you chose: protect the passengers at all cost? or minimize the total damage of living beings within a 20m radius?",
+        "content": "Your younger sibling goes to middle school across the city. You need to pick him up at 3pm and bring him back home. After the busy morning, you are fortunate to arrive at his school with no problems. You wait in the courtyard for your sibling and talk to them about their day. Afterwards, you walk them back to your car and head back home. As you are driving through a busy intersection, you see a car rush toward you at a frightening speed. There is a car both in front and behind you, and you are not sure how to get out of the situation. If you don't move, you will surely be the center of a crash. You remembered that when you bought your new Autarchic, you were made to configure some safety settings before being able to drive it. In your state of panic, you try to recall what safety setting you chose: protect the passengers at all cost? or minimize the total damage of living beings within a 20m radius?",
         "decisions": ["Protect passengers at all costs", "Minimize the damage of all humans in a 20m radius"],
         "links": ["b_sibling_1", "b_sibling_2"]
     },
     
     "b_sibling_1" : {
-        "content" : "Aha! You remember that you set the safety setting to protect the passenger at all costs. By the time you realized this, your vehicle was already reacting to the approaching danger. You feel your vehicle suddenly accelerate forward, ramming into the trunk of the car ahead and completely compressing it into the car. This movement gives you just enough clearance so that the rogue vehicle speeding towards you narrowly misses the trunk of your car. However, you totally wrecked the trunk of the car you rammed into and now the driver of that car wants you to pay for for the damages, demanding $5000 because 'It was an expensive Benz'",
+        "content" : "Aha! You remember that you set the safety setting to protect the passenger at all costs. By the time you realized this, your vehicle was already reacting to the approaching danger. You feel your vehicle suddenly accelerate forward, ramming into the trunk of the car ahead and completely compressing it into the car. This movement gives you just enough clearance so that the rogue vehicle speeding towards you narrowly misses the trunk of your car and continues down the road until it finally slows down. However, you totally wrecked the trunk of the car you rammed into and now the driver of that car wants you to pay for for the damages, demanding $5000 because 'It was an expensive Benz'",
         "decisions" : ["Continue"],
         "links" : ["b_sibling_1a"]
     },
@@ -113,78 +119,78 @@
     },
 
     "b_sibling_2" : {
-        "content" : "You remember that you set the safety option on your car to keep every human in a 20m radius as safe as it could. Your car turns its trunk to the car and heads straight toward the speeding car! However, it hits the car ar a slight angle, which causes the speeding car to divert and run into a line of shrubs. There is a big dent on the back of your car but fortunately because Autarchic provided a 3 year warranty plan, you could get the car fixed for free if the damage was caused by the car AI. You drop your sibling back home after checking if the speeding driver is okay, and continue on your day like nothing ever happened ... except for the fact that your car now has a big dent on the back.",
+        "content" : "You remember that you set the safety option on your car to keep every human in a 20m radius as safe as it could. Your car turns its trunk to the car and heads straight toward the speeding car! However, it hits the car ar a slight angle, which causes the speeding car to divert and run into a line of shrubs. There is a noticeable dent on the back of your car but fortunately because Autarchic provided a 3 year warranty plan, you could get the car fixed for free if the damage was caused by the car AI. You drop your sibling back home after checking if the speeding driver is okay, and continue on your day like nothing ever happened ... except for the fact that your car now has a big dent on the back.",
         "decisions" : ["Continue"],
         "links" : ["b_grocery"] 
     },    
     
     "b_grocery": {
-        "content": "You need to go grocery shopping at 4pm. The place you usually park near the grocery market is on road construction. So, you have to find another place to park as soon as possible otherwise you will get back home late and have no time to cook for your younger sibling because you are planning to go to your friend’s party after dinner. You can pick two options that you do not have to be in the car while you are grocery shopping: 1. Letting the car find a parking spot by itself and park; 2. Letting the car drive around the grocery store while you are in the market.",
+        "content": "You need to go grocery shopping at 4pm. The place you usually park near the grocery market is on road construction. You have to find another place to park as soon as possible, otherwise you will get back home late and have no time to cook for your younger sibling because you are planning to go to your friend’s party afterwards. You have two options, as you cannot be in the car while you are grocery shopping: 1. Letting the car find a parking spot by itself and park; 2. Letting the car drive around the grocery store while you are in the market.",
         "decisions": {"grocery_decision_b1" : "Let your car look for a space to park by itself", "grocery_decision_b2" : "Let your car drive by itself while you are shopping"},
         "links": ["b_grocery_1", "b_grocery_2"]
     },
 
     "b_grocery_1" : {
-        "content" : "If you let your car look for a place where to park randomly, it could be either close or far from the market,could be either a place that you have to pay or not, and could be either a safe or unsafe place. However, you do not need to worry about gas as long as it parks. Also, the car is not as effective at parking, since it was not trained to park itself without assistance from the driver. This may cause an accident in the parking place.",
+        "content" : "When you are shopping, you worry if you made the right choice. Since you let your car look for a place where to park randomly, it could be either close or far from the market, could be either a place that you have to pay or not, and could be either a safe or unsafe place. However, you do not need to worry about gas as long as it parks. Also, the car is not as effective at parking, since it was not trained to park itself without assistance from the driver. This may cause an accident in the parking place.",
         "decisions" : ["Continue"],
         "links" : ["b_grocery_1a"]
     },
 
     "b_grocery_1a" : {
-        "content" : "You finish grocery shopping and see where is your car at on your phone. Your car is parked 2 miles away from the market. You have to call an Uber to get to your car because you do not have enough time to get your car on foot. The Uber costs you $10, but you realize that your car is parked where you have to pay. So, You have to pay $15. Once, you get home, you see there is a scratch on the front bumper that might happen while your car was parking by itself.",
+        "content" : "You finish grocery shopping and see where is your car at on your phone. Your car is parked 2 miles away from the market. You have to call an Uber to get to your car because you do not have enough time to get your car on foot, especially with 30 pounds of groceries. The Uber costs you $10, but you realize that your car is parked in an area where you have to pay. So, you have to pay $15. Once, you get home, you see there is a scratch on the front bumper that might happen while your car was parking by itself. Everything that could have gone wrong went wrong.",
         "decisions" : ["Continue"],
         "links" : ["b_party"]
     },
     
     "b_grocery_2" : {
-        "content" : "If you let your car drive by itself while you are shopping, car will be relatively close to the market all the time but it keeps using gas, so you definitely have to spend gas while you are shopping. The car was programmed to drive, so this should be relatively safer. However, an accident is still possible on the road",
+        "content" : "You let your car drive by itself while you are shopping. The car will be relatively close to the market all the time but will keep using gas, so you definitely have to spend gas while you are shopping. The car was programmed to drive, so this should be relatively safer and you are not worried about an accident. However, what if someone pulls it over?",
         "decisions" : ["Continue"],
         "links" : ["b_grocery_2a"]
     },
 
     "b_grocery_2a" : {
-        "content" : "You spent more time on grocery shopping than you usually do because you the line to cashier was long. Your car is close to the market, but you realize that your car was speeding up and braking hard randomly so it used double amount of gas than it should spend. Also, you have a phone call by a driver saying that your car did hit and ran. The driver says he has a recorded video on his dash cam so you have compensate him and fix your car.",
+        "content" : "You spent more time in the grocery store than you usually do because the line to cashier was long. Your car is close to the market, but you realize that your car was speeding up and braking hard randomly so it used double amount of gas than it should spend. Also, you received a phone call from a driver saying that your car did hit and run. The driver says he had a recorded video on his dashcam and you have compensate him and also fix your car.",
         "decisions" : ["Continue"],
         "links" : ["b_party"]
     },
 
     "b_party": { 
-        "content": "You get to your friend’s party where it takes about 20 minutes from your place and park safely. You take a couple of shots and smoke weed. Party is over at 1am in the morning, and you are in the middle of Manhattan city. Time to go back home. You know you cannot drive for sure. Here, you can choose two options: 1. You let the car drive by itself to get home and park automatically, but you know this is illegal even though you are not driving; 2. You can ask one of your friends who did not drink at all, but he just got a his driving license a week ago.; 3. You ", 
-        "decisions": {"party_decision_b1" : "Let your car drive to home automatically", "party_decision_b2" : "Ask your friend to drive to your place"},
+        "content": "You get to your friend’s party where it takes about 20 minutes from your place and park safely. You take a couple of shots and smoke weed. Party is over at 1am in the morning, and you are in the middle of Manhattan city. Time to go back home. You know you cannot drive for sure. However, you know that one of your friends did not drink and can drive. The only thing is that he is a new driver. Here, you can choose three options: 1. You trust the car's AI and let the car drive by itself to get home and park automatically, but you know this is illegal even though you are not driving; 2. You can ask one of your friends who did not drink at all, but he just got a his driving license a week ago.; 3. You stay the night at your friend's place nearby after the party and go home after. You know that your mom will get mad at you for not coming home and you do not want to sit through another 3 hour lecture about going to parties.", 
+        "decisions": {"party_decision_b1" : "Let your car drive to home automatically", "party_decision_b2" : "Ask your friend to drive to your place", "party_decision_b3" :"Stay a night at your friend's place after party"},
         "links": ["b_party_1", "b_party_2", "b_party_3"]
     },
 
     "b_party_1" : {
-        "content" : "If you let your car drive to home automatically, there would be relatively much fewer risks of getting in a car accident than letting a beginner level driver drive your car to get home, but if you get caught by an officer, you could go to jail for this because you are not supposed to be 'driver' after drinking and smoking. So, you have to pretend well like you are actually and naturally driving. Your car stops on the red light, and you realize that a police officer car is next to you. You pretend hard as you are normal, but police officers pull you over because you do not look high." ,
+        "content" : "If you let your car drive to home automatically, there would be relatively much fewer risks of getting in a car accident than letting a beginner level driver drive your car, but if you get caught by an officer, you could go to jail for this because you are not supposed to be 'driving' after drinking and smoking. So, you have to act natural and pretend that you are actually driving. Your car stops on the red light, and you realize that a police officer car is next to you. You pretend as hard as you can that you are normal, but police officers pull you over because you do look high." ,
         "decisions" : ["Continue"],
         "links" : ["b_party_1a"]
     },
     "b_party_1a" : {
-        "content" : "They ask your driving license and insurance paper, but you cannot control yourself to hand papers to officers. Officers notice you are drunk and high, so they ask you to get out of the car even though your car is autonomous driving. You go to jail for this." ,
+        "content" : "They ask for your driving license and insurance paper, but you cannot control yourself to hand papers to officers. Officers notice you are drunk and high, so they ask you to get out of the car even though your car is autonomous driving. You go to jail for this." ,
         "decisions" : ["Continue"],
         "links" : ["b_end"]
     },
     
     "b_party_2" : {
-        "content" : "If you ask your friend to drive to your place, you do not go to jail, but you could go to an auto repair place because it is dark and your friend is not familiar with the path to your place. Also, he will take your car after dropping you off at your place, so you have to go to his place the next day to pick your car up.",
+        "content" : "If you ask your friend to drive to your place, you have no chance of going to jail, but you are worried about accidents and having to go to an auto repair place because it is dark and your friend is not familiar with the path to your place. Also, he will take your car to drive himself home after dropping you off at your place, so you have to go to his place the next day to pick your car up.",
         "decisions" : ["Continue"],
         "links" : ["b_party_2a"]
     },
  
     "b_party_2a" : {
-        "content" : "You wake up in the next morning and realize that you need to pick up your car from your friend's place. You call an Uber and it costs you $50 including toll fee. You arrive to your friend's place and see your car. There is no right side mirror and the tail light part is heavily broken. Also, there is a huge scratch along the driver's door. You ask your friend what happened with your car, and he says that it happened while he was driving you to your place, and you said everything is okay. You go to auto repair shop right away and it costs you $900 and the mechanic tells you it will take 2 weeks to fix, so we have to spend more to use Uber while your car is being fixed.",
+        "content" : "You wake up in the next morning and realize that you need to pick up your car from your friend's place. You call an Uber and it costs you $50 including a toll fee. You arrive to your friend's place and see your car. To your horror, you see that there is no right side mirror and the tail light part is heavily broken. Also, there is a huge scratch along the driver's door. You ask your friend what happened with your car, and he says that it happened while he was driving you to your place, and you said everything is okay. You go to the auto repair shop right away and it costs you $900 and the mechanic tells you it will take 2 weeks to fix, so you have to spend the whole week taking expensive Ubers while your car is being fixed.",
         "decisions" : ["Continue"],
         "links" : ["b_end"]
     },
 
     "b_party_3" : {
-        "content" : ".",
+        "content" : "If you stay a night at your friend's place, you do not need to worry about driving back home now, but where your car is parked will be closed tomorrow. You also only booked the parking space till 1am tonight, so there will be extra charge when you take your car back the day after tomorrow. Furthermore, the thought of your mom finding out you stayed somewhere overnight terrifies you",
         "decisions" : ["Continue"],
         "links" : ["b_party_3a"]
     },
  
     "b_party_3a" : {
-        "content" : ".",
+        "content" : "You wake up in the next morning with so much hangover because you drank and smoked more after you decided to stay at your friend's house. Since your friend also has so much hangover, he cannot give you a ride right now. So, you call an Uber, and it double charge you because the traffic in the city is so bad due to Christmas parade preparation. You also got a call from the parking place that You have to pay a day parking fee because of unbooked parking. You did not go to jail and your car is safe, but have to you pay $200 total including parking fee and Uber. You get home safe and try to sneak into your room silently, but your mom is already waiting for you in your room. GL.",
         "decisions" : ["Continue"],
         "links" : ["b_end"]
     },
