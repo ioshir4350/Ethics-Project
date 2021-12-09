@@ -1,38 +1,84 @@
 {
-    "a_gym": {
+    "home": {
         "content": "You wake up, and the first thing to do for the day is get your daily dose of exercise. However, you notice that your alarm didn’t go off at the appropriate time. Therefore, you are running late. Now, are you driving or is the car driving?", 
         "decisions" : [
             "Drive Manually?", 
             "Allow car to drive?"], 
-        "links": ["a_school_self", "a_school_car"]},
+        "links": ["a_gym_self", "a_gym_car"]},
     
-    "a_school_self": {
-        "content": "You arrive on time, but a speed camera catches you, and you are fined... You are now going to school. You forgot a required textbook at home, so you dash over there to pick it up. Now, you have to get to school from home. If you autodrive, you may arrive late and have to autopark.",
-        "decisions": [ "Drive Manually?", 
-                    "Allow car to drive?"],
-        "links": ["a_sibling_self"]
+    "a_gym_car": {
+        "content": "you arrive on time, but you are 30 minutes late to the gym. You decide to cut your time at the gym, so timewise for the next task you are okay. You are now going to school. You forgot a required textbook at home, so you dash over there to pick it up. Now, you have to get to school from home. If you autodrive, you may arrive late and have to autopark.", 
+        "decisions" : [
+            "Drive Manually?", 
+            "Allow car to drive?"], 
+        "links": ["a_school_self_park", "a_school_autopark"]
     },
-    "a_school_car": {
-        "content":"you arrive on time, but you are 30 minutes late to the gym. You decide to cut your time at the gym, so timewise for the next task you are okay",
-        "decisions":["Drive Manually?", 
-            "Allow car to drive?"],
+    "a_gym_self":{
+        "content": " you arrive on time, but a speed camera catches you, and you are fined. You decide to cut your time at the gym, so timewise for the next task you are okay. You are now going to school. You forgot a required textbook at home, so you dash over there to pick it up. Now, you have to get to school from home. If you autodrive, you may arrive late and have to autopark.", 
+        "decisions" : [
+            "Drive Manually?", 
+            "Allow car to drive?"], 
+        "links": ["a_school_autopark", "a_school_autopark"]
+    },
+    "a_school_autopark":{
+        "content": "You arrive late and had to autopark. You have to now pick up yoursiblings from school.", 
+        "decisions" : [
+            "Drive Manually?", 
+            "Allow car to drive?"], 
+        "links": ["a_sibling_late","a_sibling_less_late"]
+    },
+    "a_school_self_park":{
+        "content": "You make it in time and you manually park. You have to pick your younger sibling from school", 
+        "decisions" : [
+            "Drive Manually?", 
+            "Allow car to drive?"], 
+        "links": ["a_sibling_ontime, a_sibling_ontime"]
+    },
+    
+    "a_sibling_ontime":{
+        "content": "You have picked up your sibling on time. You now have to go grocery shopping! You arrived. Do you want to double park or autopark?", 
+        "decisions" : [
+            "Double park", 
+            "Autopark"], 
+        "links": ["a_missing_items","a_success_items"]
+    },
+    "a_sibling_less_late":{
+        "content": "You have arrived a little late making your siblings wait for a small while. Now you have to go grocery shopping. You have arrived. Do you want to double park or autopark?", 
+        "decisions" : [
+            "Double Park?", 
+            "Autopark?"], 
+        "links": ["a_missing_items","a_success_items"]
+    },
+    "a_sibling_late":{
+        "content": "You have made it to the school right in time for dismissal. But you have sped, and couldn’t slow down in time for a speed bump located in the school zone. You see a parent and child crossing and couldn't stop. Because of negligent driving, the parent and child have died. Game over!!!", 
+        "decisions" : [], 
         "links": []
     },
+    "a_missing_items":{
+        "content": "Since you double parked, you ended up rushing and then ended up missing several items unfortunately. Now, you get to your friend’s party where it takes about 20 minutes from your place and park safely. You take a couple of shots and smoke weed. Party is over at 1 am in the morning, and you are in the middle of Manhattan city. Time to go back home. You know you cannot drive for sure. Here, you can choose two options: 1. You know a shortcut that hasn’t been programmed into the car yet for autodrive. If you take this, you avoid the toll you have to pay and avoid the booth which contains police. 2. You let the car drive, which takes a bridge that has a toll.", 
+        "decisions" : ["Drive Manually?", 
+            "Allow car to drive?"], 
+        "links": ["a_crash", "a_money"]
+    },
 
-    "a_sibling": {
-        "content": "You have autoparked last time, and the car didn’t find any parking nearby, so it went far in order to find parking. Now, you have to wait for it to come back.", 
-        "decisions" : {
-            "sibling_decision_a1" : "You are late because your arms are sore, you couldn’t go fast enough because controlling the wheel at high speeds with sore arms can be dangerous. You have to autopark.", 
-            "sibling_decision_a2" : "If the car drives… you arrive on time, but you are 30 minutes late to the gym. You decide to cut your time at the gym, so timewise for the next task you are okay."
-        },
-        "links": []},
+    "a_success_items":{
+        "content": "Since you autoparked, you didn't have to rush and successfully bought all the food items. Now, you get to your friend’s party where it takes about 20 minutes from your place and park safely. You take a couple of shots and smoke weed. Party is over at 1 am in the morning, and you are in the middle of Manhattan city. Time to go back home. You know you cannot drive for sure. Here, you can choose two options: 1. You know a shortcut that hasn’t been programmed into the car yet for autodrive. If you take this, you avoid the toll you have to pay and avoid the booth which contains police. 2. You let the car drive, which takes a bridge that has a toll.", 
+        "decisions" : ["Drive Manually?", 
+                       "Allow car to drive?"], 
+        "links": ["a_crash", "a_money"]
+    },
 
-    "a_grocery": {
-        "content": "You now have to go grocery shopping! With the auto-drive, you have to deal with the car being parked really far while manual driving requires double parking as well as being rushed.", 
-        
-        "links": []},
-
-    "a_party": {"content": "You get to your friend’s party where it takes about 20 minutes from your place and park safely. You take a couple of shots and smoke weed. Party is over at 1 am in the morning, and you are in the middle of Manhattan city. Time to go back home. You know you cannot drive for sure. Here, you can choose two options: 1. You know a shortcut that hasn’t been programmed into the car yet for autodrive. If you take this, you avoid the toll you have to pay and avoid the booth which contains police. 2. You let the car drive, which takes a bridge that has a toll. ", "links": []},
+    "a_crash":{
+        "content": "You crash into a lamppost. But no major injuries are acquired. However, your headlight has been completely damaged, so you have to repair that in the future.", 
+        "decisions" : [], 
+        "links": []
+    },
+    "a_money":{
+        "content": "You pay the toll and the fine for driving drunk even on autodrive (let’s make this less than the fine for drunk driving manually).", 
+        "decisions" : [], 
+        "links": []
+    },
+    
 
 
     
