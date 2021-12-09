@@ -81,7 +81,6 @@
     
 
 
-    
     "b_gym": {
         "content": "For your New Year's resolution, you promised yourself that you would spend an hour at the gym each day. So far, you have kept to your rigorous schedule, but now you are getting busier because of school and other obligations. Still, you are committed to your exercise regimen and want to try your best to go to the gym for and hour each day. The gym you go to is 2 miles away, and you must drive to your location. You grab your stuff, hop into your car and begin driving to the gym. Halfway to your destination while you are on the highway, you get caught in a traffic jam. There seems to be some space that you can squeeze your car through to get ahead of the traffic, but it will be a bit tricky and risky. Your car could potentially be damaged. When you check your GPS, you see that you will arrive at the gym at around 9:30am, half an hour late. You would barely get any exercise at that point and worst of all, you will miss leg day. Do you try to cut in front of the other vehicles or wait in traffic?", 
         "decisions": ["Cut in front of the vehicles", "Be safe and wait for the traffic"],
