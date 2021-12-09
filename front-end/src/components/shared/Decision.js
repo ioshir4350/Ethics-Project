@@ -10,14 +10,20 @@ const Decision = () => {
     
     //console.log(story[task])
     const content = story[task].content
+    const decisions = story[task].decisions
     const links = story[task].links
+    console.log(content, decisions, links);
     return (
         <div>
             <h3>
                 {content}
             </h3>
-            {links.map((link) => {
-                <Link to={"/page/" + link}/>
+            {links.map((link, i) => {
+                return(
+                <Link to={"/page/" + link}>
+                    <button>{decisions[i]}</button>    
+                </Link>
+                )
             })}
 
 
