@@ -21,7 +21,7 @@
         "links": ["a_school_autopark", "a_school_autopark"]
     },
     "a_school_autopark":{
-        "content": "You arrive late and had to autopark. You have to now pick up yoursiblings from school.", 
+        "content": "You arrive late and had to autopark. You have to now pick up your siblings from school.", 
         "decisions" : [
             "Drive Manually?", 
             "Allow car to drive?"], 
