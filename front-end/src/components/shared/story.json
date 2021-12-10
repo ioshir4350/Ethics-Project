@@ -1,4 +1,28 @@
 {
+    "intro": {
+        "content": "You live in the year 2041. It is the beginning of the age of the self driving vehicle. AI controlled cars have become much more common on the roads, and companies such as Tesla are dominating the car market. As a college student, you are looking for a replacement vehicle because your old used Honda Civic sputtered its last breath a few days ago and left you stranded in the middle of the highway. While you wish you could but a Tesla, you cannot afford it. However, other comparable options now exist, primarily RedRox and Autarchic.",
+        "decisions": ["Continue"],
+        "links": ["car_choice"]
+    },
+
+    "car_choice": {
+        "content": "Nowadays, all car purchases are made online, so you open the two company websites and try to compare the two companies' vehicles. You see that RedRox's design philosophy is to keep the driver safe ... from the law, and that its AI system will always keep the rules and regulations as top priority. The company claims that by driving their car, you would never get a ticket again. Autarchic, on the other hand, promised to keep the passenger safe, no matter what rules you break. 'Safety is our law' is the company motto. You eventually end up on 2 models of cars which you like, but are not sure which company to choose. You decide to flip a coin. Which side does the coin land on?",
+        "decisions": ["RedRox", "Autarchic"],
+        "links": ["choice_redrox", "choice_autarchic"]
+    },
+
+    "choice_redrox": {
+        "content": "You hate the idea of getting pulled over and being fined, so you choose the RedRox model L100. The L stands for legal.",
+        "decisions": ["Continue"],
+        "links": ["home"]
+    },
+
+    "choice_autarchic": {
+        "content": "You would rather be safe from danger, even if it meant breaking a few rules, so you choose the Autarchic model S50. The S stands for safety.",
+        "decisions": ["Continue"],
+        "links": ["b_gym"]
+    },
+
     "home": {
         "content": "You wake up, and the first thing to do for the day is get your daily dose of exercise. However, you notice that your alarm didn’t go off at the appropriate time. Therefore, you are running late. Now, are you driving or is the car driving?", 
         "decisions" : [
@@ -7,7 +31,7 @@
         "links": ["a_gym_self", "a_gym_car"]},
     
     "a_gym_car": {
-        "content": "you arrive on time, but you are 30 minutes late to the gym. You decide to cut your time at the gym, so timewise for the next task you are okay. You are now going to school. You forgot a required textbook at home, so you dash over there to pick it up. Now, you have to get to school from home. If you autodrive, you may arrive late and have to autopark.", 
+        "content": "you arrive on time, but you are 30 minutes late to the gym. You decide to cut your time at the gym, so time-wise for the next task you are okay. You are now going to school. You forgot a required textbook at home, so you dash over there to pick it up. Now, you have to get to school from home. If you autodrive, you may arrive late and have to autopark.", 
         "decisions" : [
             "Drive Manually?", 
             "Allow car to drive?"], 
