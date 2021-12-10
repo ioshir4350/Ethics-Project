@@ -12,13 +12,13 @@
     },
 
     "choice_redrox": {
-        "content": "You hate the idea of getting pulled over and being fined, so you choose the RedRox model L100. The L stands for legal.",
+        "content": "You hate the idea of getting pulled over and being fined, so you choose the RedRox model L100. The L stands for legal. You receive your  brand  new shiny car the next day and check it out. RedRox, as the name indicates, are always red. The logo resembles a judge's hammer, really emphasizing how law-abiding this vehicle is designed to be.",
         "decisions": ["Continue"],
         "links": ["home"]
     },
 
     "choice_autarchic": {
-        "content": "You would rather be safe from danger, even if it meant breaking a few rules, so you choose the Autarchic model S50. The S stands for safety.",
+        "content": "You would rather be safe from danger, even if it meant breaking a few rules, so you choose the Autarchic model S50. The S stands for safety. You receive your  brand  new shiny car the next day and check it out. Autarchic, being safety oriented, packaged your whole car with a thick protective foam and it takes you half an hour to pull all the protective coverings off to see the car in its full glory. Autarchic's logo resembles the superman S. They claim that the vehicle protects you like a superhero.",
         "decisions": ["Continue"],
         "links": ["b_gym"]
     },
@@ -118,7 +118,7 @@
     },
 
     "b_gym_2" : {
-        "content" : "You are a safe drivers and decide to not take the risk. The consequences of damaging your vehicle, another vehicle, or any passengers in an accident are far too great to justify the realtively little amount of time you save to exercise your legs. You can exercise another time.",
+        "content" : "You are a safe drivers and decide to not take the risk. The consequences of damaging your vehicle, another vehicle, or any passengers in an accident are far too great to justify the relatively little amount of time you save to exercise your legs. You can exercise another time.",
         "decisions" : ["Continue"],
         "links" : ["b_school"]
     },
@@ -129,15 +129,27 @@
         "links": ["b_school_1", "b_school_2"]},
     
     "b_school_1" : {
-        "content" : "You are really feeling like a risk taker today, and decide that you cannot miss your class, as it is the review before your finals. You turn to the right off the highway and onto the grass. You feel the contact of the tires and the ground change, as your vehicle feels like it is running on mud. The soil was muddier than you thought, but determined, you continue. Halfway through the field you feel the soil really becoming soft and your car sinks 5 inches into the ground. Fortunately, you pushed through and eventually made it to the end of the field, coming back onto the road. You drive off as you hear sirens behind you. You pull to the side to let the police through, but they also pull over and stop right behind you.",
-        "decisions" : ["Continue"],
-        "links" : ["b_school_1a"]
+        "content" : "You are really feeling like a risk taker today, and decide that you cannot miss your class, as it is the review before your finals. You turn to the right off the highway and onto the grass. You feel the contact of the tires and the ground change, as your vehicle feels like it is running on mud. The soil was muddier than you thought, but determined, you continue. Halfway through the field you feel the soil really becoming soft and your car sinks 5 inches into the ground. The car starts beeping and warns you that your safety meter is going down rapidly. On the touch screen interface, it prompts you to go to super safety mode and let the car make the optimal decisions to drive you out of this situation. Do you let the car's AI take more control?",
+        "decisions" : ["Yes", "No"],
+        "links" : ["b_school_1a", "b_school_1b"]
     },
 
     "b_school_1a" : {
-        "content" : "The police officer walks up to your window and asks what you were thinking driving over private property. As he takes your registration and license number, he explains that the owner of the property was walking his dog while you were driving over and reported you to the police. You are fined $250 for trespassing but are let go because you were a student and you explained to him the reason you had to do it.",
+        "content" : "Fortunately, you pushed through and eventually made it to the end of the field, coming back onto the road. You drive off as you hear sirens behind you. You pull to the side to let the police through, but they also pull over and stop right behind you. The police officer walks up to your window and asks what you were thinking driving over private property. As he takes your registration and license number, he explains that the owner of the property was walking his dog while you were driving over and reported you to the police. You are fined $250 for trespassing but are let go because you were a student and you explained to him the reason you had to do it.",
         "decisions" : ["Continue"],
         "links" : ["b_sibling"]
+    },
+
+    "b_school_1b": {
+        "content": "The AI will definitely take care of things. You give your control to the AI and let it begin driving. The AI begins revving the tires, as the mud that covered its sensors. The vehicle is rapidly sinking! However, the AI keeps repeating 'remain calm' to you on the speakers. Maybe it is doing what it is supposed to?",
+        "decisions" : ["Do nothing", "Turn AI off"],
+        "links": ["stuck_in_mud_ending", "b_school_1a"]
+    },
+
+    "stuck_in_mud_ending": {
+        "content": "It turns out that the mud caused the AI to mistakenly believe that another vehicle is about to crash into it. The car was trying to manuever away from the accident. However, it was just stuck in mud and now it is even more stuck in mud. When you finally manage turn the AI off, it is too late and your whole tire is in the mud. You spend the whole day talking to the angry landowner and police about how you ended up in this situation.",
+        "decisions": [""],
+        "links": []
     },
 
     "b_school_2" : {
@@ -190,7 +202,7 @@
     
     "b_grocery": {
         "content": "You need to go grocery shopping at 4pm. The place you usually park near the grocery market is on road construction. You have to find another place to park as soon as possible, otherwise you will get back home late and have no time to cook for your younger sibling because you are planning to go to your friend’s party afterwards. You have two options, as you cannot be in the car while you are grocery shopping: 1. Letting the car find a parking spot by itself and park; 2. Letting the car drive around the grocery store while you are in the market.",
-        "decisions": {"grocery_decision_b1" : "Let your car look for a space to park by itself", "grocery_decision_b2" : "Let your car drive by itself while you are shopping"},
+        "decisions": ["Let your car look for a space to park by itself" ,  "Let your car drive by itself while you are shopping"],
         "links": ["b_grocery_1", "b_grocery_2"]
     },
 
@@ -207,15 +219,20 @@
     },
     
     "b_grocery_2" : {
-        "content" : "You let your car drive by itself while you are shopping. The car will be relatively close to the market all the time but will keep using gas, so you definitely have to spend gas while you are shopping. The car was programmed to drive, so this should be relatively safer and you are not worried about an accident. However, what if someone pulls it over?",
-        "decisions" : ["Continue"],
-        "links" : ["b_grocery_2a"]
+        "content" : "You let your car drive by itself while you are shopping. The car will be relatively close to the market all the time but will keep using gas, so you definitely have to spend gas while you are shopping. The car was programmed to drive, so this should be relatively safer and you are not worried about an accident. However, what if someone pulls it over? You can decide between two options: 1. Set up your own route and speed limit; 2. Let the AI choose its own route.",
+        "decisions" : ["Set up your own route and speed limit", "Let the AI choose its own route"],
+        "links" : ["b_grocery_2a" , "b_grocery_2b"]
     },
 
     "b_grocery_2a" : {
-        "content" : "You spent more time in the grocery store than you usually do because the line to cashier was long. Your car is close to the market, but you realize that your car was speeding up and braking hard randomly so it used double amount of gas than it should spend. Also, you received a phone call from a driver saying that your car did hit and run. The driver says he had a recorded video on his dashcam and you have compensate him and also fix your car.",
+        "content" : "You spent more time in the grocery store than you usually do because the line to cashier was long. Your car is close to the market, but you realize that your car was speeding up and braking hard as you set the speed limit so it used double amount of gas than it should spend. Also, you received a phone call from a driver saying that your car did hit and run. The driver says no one got hurt, but he had a recorded video on his dashcam and you have compensate him and also fix your car.",
         "decisions" : ["Continue"],
         "links" : ["b_party"]
+    },
+    "b_grocery_2b" : {
+        "content" : "After finishing your grocery shopping, you check your car's location on your phone. On the Autarchic application, your car stops on the road close to the market, but you see other cars still moving in front of you. So, you reach to your car and realize that your car crash with another car. A lady is standing next the her car holding grocery bags. You go to her and ask her what is happening, and she told you that your car crashed into hers. However, you know that this cannot be the case if your car was driving optimally. You do see that she has the same model of Autarchic car as you. You ask her how it is possible that both cars could crash and whether she had her AI on. She tells you that she had the car look for a parking spot as well. You call Autarchic customer support right away to double check this is technical issue or mistake. They tell you that while the car's AI is trained to prevent human casualty, an unoccupied car has no passengers, so both cars will not react. Furthermore, it seems that both cars were competing the same parking spot. The operator tells you to always be in the car while it is driving, and that you did not drive responsibly. A towing car comes to to fix your car and the lady's car and you apologize to her.",
+        "decisions" : ["Continue"],
+        "links" : ["The End"]
     },
 
     "b_party": { 
