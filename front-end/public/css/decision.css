@@ -8,3 +8,23 @@ h3{
     padding: 50px;
     border-radius: 30px;
 }
+
+.player-name{
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/* button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px !important;
+    border-style: none;
+}
+
+button:hover{
+    border-style: solid;
+} */

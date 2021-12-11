@@ -2,10 +2,16 @@ import React from 'react'
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import story from './story.json'
+import Button1 from './Button1';
+import Button2 from './Button2';
+import Button3 from './Button3';
+import NavBar from './NavBar.js';
+
 
 const Decision = () => {
-    var currPage = 0;
-    var currTime = 9;
+    // var currPage = 0;
+    // var currTime = 9;
+
     const {task} = useParams()
     
     //console.log(story[task])
@@ -13,15 +19,19 @@ const Decision = () => {
     const decisions = story[task].decisions
     const links = story[task].links
     console.log(content, decisions, links);
+
     return (
         <div>
-            <h3>
+            <NavBar/>
+            <h1 className='player-name'>Player: {localStorage.getItem('username')}</h1>
+            <h3 className="content">
                 {content}
             </h3>
+            
             {links.map((link, i) => {
                 return(
                 <Link to={"/page/" + link}>
-                    <button>{decisions[i]}</button>    
+                    <Button3>{decisions[i]}</Button3> 
                 </Link>
                 )
             })}

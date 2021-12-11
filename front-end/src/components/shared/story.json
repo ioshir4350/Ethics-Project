@@ -189,7 +189,7 @@
     },
     
     "tow_truck_ending" : {
-        "content" : "As you begin to fall asleep, you contemplate all the decisions you made today. Though you almost got into an accident, your choices in your now dented vehicle saved you and your sibling's life. The AI did its job and kept you safe. Maybe this was the best outcome that could have happened. However, you decide to not drive for the rest of the month and just take public transportation everywhere",
+        "content" : "As you begin to fall asleep, you contemplate all the decisions you made today. Though you almost got into an accident, your choices in your now dented vehicle saved you and your sibling's life. The AI did its job and kept you safe. Maybe this was the best outcome that could have happened. However, you decide to not drive for the rest of the month and just take public transportation everywhere.",
         "decisions" : ["The End"],
         "links" : []
     },
@@ -275,7 +275,25 @@
         "decisions" : ["Continue"],
         "links" : ["b_end"]
     },
-    "template" : {"decision": "", "links": []}
+    "credits" : {
+        "content": "Ethics and Technology 2021: Tazwar Belal, Ted Keunsil Kang, Isfar Oshir, Junming Qiu", 
+        "decision": [], 
+        "links": []
+    },
+
+    "summary_a":{
+        "content": "",
+        "decision" : [],
+        "links": []
+    },
+
+    "summary_b": {
+        "content": "",
+        "decision" : [],
+        "links": []
+    }
+
+    
     
     
 }
